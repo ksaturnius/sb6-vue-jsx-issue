@@ -1,0 +1,31 @@
+import { Story, Preview, Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+import MyButton from './MyButton';
+
+<Meta title="MDX" parameters={{
+    previewTabs: { canvas: { hidden: true } },
+}} />
+
+# Storybook Docs for Vue
+
+Metus sapien porta elementum vivamus habitasse aliquam potenti aptent nulla, sagittis malesuada consectetur nisi nullam porttitor eu nibh pellentesque dolor, eros pretium venenatis orci id quam dignissim dictum. Ad fames lorem eros himenaeos ex semper tellus tincidunt, vulputate pretium duis diam taciti augue feugiat, pellentesque hac placerat aenean potenti per sagittis.
+
+<Preview>
+  <Story name="Button">{{
+    components: {MyButton},
+    template: '<my-button @click="action">Hello Button</my-button>',
+  }}</Story>
+</Preview>
+
+# Color
+
+Also, an example of using the ColorPalette functionality:
+
+<ColorPalette>
+  <ColorItem title="Neutral Colors" colors={{
+    '$grey-dark': 'rgb(9, 49, 73)',
+    '$grey-medium': 'rgb(93, 120, 136)',
+    '$grey-light': 'rgb(206, 214, 219)',
+    '$grey-lightest': 'rgb(243, 245, 246)',
+    '$white':'rgb(255, 255, 255)' ,
+  }} />
+</ColorPalette>

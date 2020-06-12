@@ -11,7 +11,7 @@
     "@storybook/addon-links": "^6.0.0-beta.23",
     "@storybook/addons": "^6.0.0-beta.23",
     "@storybook/vue": "^6.0.0-beta.23",
-    "@vue/babel-preset-jsx": "^1.1.2",
+    "@vue/cli-plugin-babel": "^4.4.1",
     "babel-loader": "^8.1.0",
     "babel-preset-vue": "^2.0.2",
     "css-loader": "^3.5.3",
