@@ -1,0 +1,15 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import MyButton from './MyButton';
+
+<Meta title="MDX/Button" parameters={{
+    previewTabs: { canvas: { hidden: true } },
+}} />
+
+# Storybook Docs for Vue
+
+<Preview>
+  <Story name="Button">{{
+    components: {MyButton},
+    template: '<my-button @click="action">Hello Button</my-button>',
+  }}</Story>
+</Preview>

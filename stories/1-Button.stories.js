@@ -14,6 +14,7 @@ export const Text = () => ({
   methods: { action: action('clicked') },
 });
 
+// this JSX story doesn't seem to work with the current babel.config.js
 // export const Jsx = () => ({
 //   components: { MyButton },
 //   render(h) {
