@@ -1,8 +1,4 @@
-// module.exports = {
-//   presets: ["@vue/babel-preset-jsx"],
-// };
-
-module.exports = {
+/module.exports = {
   presets: [
     [
       '@vue/cli-plugin-babel/preset',
