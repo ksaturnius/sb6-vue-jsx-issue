@@ -14,14 +14,14 @@ export const Text = () => ({
   methods: { action: action('clicked') },
 });
 
-// this JSX story doesn't seem to work with the current babel.config.js
-// export const Jsx = () => ({
-//   components: { MyButton },
-//   render(h) {
-//     return <my-button onClick={this.action}>With JSX</my-button>;
-//   },
-//   methods: { action: linkTo('clicked') },
-// });
+// you need to Webpack updates in .storybook/main.js to get this to work
+export const Jsx = () => ({
+  components: { MyButton },
+  render(h) {
+    return <my-button onClick={this.action}>With JSX</my-button>;
+  },
+  methods: { action: action('jsx onButtonClick') },
+});
 
 export const Emoji = () => ({
   components: { MyButton },
